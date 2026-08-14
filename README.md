@@ -1,12 +1,39 @@
 # dawn.pamesa — portfolio
 
-Personal portfolio site. Plain HTML/CSS, no build step.
+Personal portfolio site. Next.js (App Router) + TypeScript + Tailwind v4, with Framer Motion for scroll and interaction work.
 
 ```
 my-portfolio/
-├── index.html    # content
-├── style.css     # styles (see :root for the theme tokens)
-└── README.md
+├── app/
+│   ├── layout.tsx     # metadata, OG/Twitter tags, pre-paint theme bootstrap
+│   ├── page.tsx       # section composition
+│   ├── globals.css    # blueprint design tokens, graph paper, corner ticks
+│   └── icon.svg       # favicon (Next.js file convention)
+├── components/        # one file per section + the interactive visuals
+├── lib/content.ts     # all copy and project data, kept out of the components
+└── public/
 ```
 
-Open `index.html` directly, or serve the folder with any static file server. Deployed via Vercel — pushes to `main` redeploy automatically.
+## Design
+
+Navy/cream "blueprint" identity: graph-paper ground, corner-bracket reference
+marks, monospace for headings and labels. Theme tokens live in `:root` in
+`app/globals.css` and are exposed to Tailwind through `@theme inline`. Dark mode
+follows the OS by default and can be overridden by the nav toggle, which
+persists to `localStorage` and is applied before first paint to avoid a flash.
+
+## Interactive pieces
+
+- `EmbeddingField` — subject-scoped vector retrieval, the Andy's Hub idea drawn literally
+- `ImpactChart` — per-project metrics; the throughput multiplier is plotted on its own scale rather than flattened onto the percentage axis
+- `Projects` — expandable problem → built → impact records
+- `RagPipeline` — ingestion-to-retrieval flow
+
+## Develop
+
+```bash
+npm install
+npm run dev
+```
+
+Deployed via Vercel — pushes to `main` redeploy automatically.
