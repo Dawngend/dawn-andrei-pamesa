@@ -1,86 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dawn Andrei Pamesa — Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dawn Andrei Pamesa</title>
+<meta name="description" content="AI/ML engineer and backend systems architect — portfolio and selected work.">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- HERO SECTION -->
-  <header class="hero">
-    <div class="container">
-      <!-- Photo removed -->
-      <h1 class="hero-name">Dawn Andrei Pamesa</h1>
-      <p class="hero-title">Data Science Student @ FEU Tech · Taekwondo Coach · ACM Junior Officer</p>
-      
-      <p class="hero-bio">
-        I am a full-scholar Data Science student and martial arts coach who thrives under pressure. 
-        I combine critical thinking with a "never give up" attitude to build impactful data-driven solutions.
-      </p>
+<header class="top">
+  <div class="wrap top-bar">
+    <a class="brand" href="#top"><span class="dot"></span>dawn.pamesa</a>
+    <nav class="top-nav">
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#stack">Stack</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
 
+<main>
+  <div class="wrap">
+    <section class="hero" id="top">
+      <p class="eyebrow">Quezon City, PH — open to remote / international</p>
+      <h1 class="name">Dawn Andrei Pamesa</h1>
+      <p class="role">
+        <strong>AI/ML engineer and backend systems architect.</strong>
+        I build the parts under the product — GPU-optimized inference pipelines, RAG
+        architectures with real vector isolation, and the async backends that keep them
+        online. Currently machine learning intern at FlyRank AI and co-founder of Dzuka Agri.
+      </p>
       <div class="hero-links">
-        <a href="https://github.com/me50/Dawngend" class="btn btn-primary" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/dawn-andrei-pamesa-870689280/" class="btn btn-secondary" target="_blank">LinkedIn</a>
+        <a class="pill-link primary" href="mailto:andreipamesa20@gmail.com">Email me</a>
+        <a class="pill-link" href="https://github.com/Dawngend" target="_blank" rel="noopener">GitHub &#8599;</a>
+        <a class="pill-link" href="https://linkedin.com/in/dawn-andrei-pamesa-870689280" target="_blank" rel="noopener">LinkedIn &#8599;</a>
+        <a class="pill-link" href="https://andyhub.org" target="_blank" rel="noopener">andyhub.org &#8599;</a>
       </div>
-    </div>
-  </header>
+    </section>
+  </div>
 
-  <!-- PROJECTS SECTION -->
-  <section class="projects">
-    <div class="container">
-      <h2 class="section-title">Projects & Leadership</h2>
-      <div class="projects-grid">
+  <div class="stats">
+    <div class="stat"><div class="num mono">60%+</div><div class="label">VRAM cut, AMD MI300X pipeline</div></div>
+    <div class="stat"><div class="num mono">95%+</div><div class="label">Retrieval latency reduction</div></div>
+    <div class="stat"><div class="num mono">100%</div><div class="label">Structurally validated deck output</div></div>
+    <div class="stat"><div class="num mono">5</div><div class="label">Shipped hackathon / production builds</div></div>
+  </div>
 
-        <!-- PROJECT 1 -->
-        <div class="project-card">
-          <h3 class="project-name">ACM Junior Officer</h3>
-          <p class="project-description">
-            Serving as a leader within the FEU Institute of Technology ACM Student Chapter, 
-            focusing on community building and technical workshops.
-          </p>
-          <a href="https://github.com/me50/Dawngend" class="project-link" target="_blank">View GitHub Repo →</a>
+  <div class="wrap">
+
+    <section id="impact">
+      <div class="section-head">
+        <h2 class="section-title">Measured impact</h2>
+        <span class="section-tag">reported per project</span>
+      </div>
+      <div class="chart" role="img" aria-label="Bar chart: ForgeAI cut VRAM usage by 60 percent, Andy's Hub cut retrieval latency by 95 percent, Sophy produced 100 percent structurally validated output, ForgeAI doubled QPS throughput.">
+        <div class="chart-row">
+          <span class="metric-label">ForgeAI &middot; VRAM reduction</span>
+          <div class="chart-track"><div class="chart-fill" style="width:60%"></div></div>
+          <span class="metric-val">60%</span>
         </div>
-
-        <!-- PROJECT 2 -->
-        <div class="project-card">
-          <h3 class="project-name">Data Analytics Portfolio</h3>
-          <p class="project-description">
-            Applying Data Science methodologies to solve complex problems, from regional poverty 
-            analytics to structured data warehouse architecture.
-          </p>
-          <a href="https://github.com/me50/Dawngend" class="project-link" target="_blank">View GitHub Repo →</a>
+        <div class="chart-row">
+          <span class="metric-label">Andy's Hub &middot; retrieval latency cut</span>
+          <div class="chart-track"><div class="chart-fill" style="width:95%"></div></div>
+          <span class="metric-val">95%</span>
         </div>
-
-        <!-- PROJECT 3 -->
-        <div class="project-card">
-          <h3 class="project-name">Athletic Leadership</h3>
-          <p class="project-description">
-            Professional Taekwondo coaching, managing high-pressure training environments 
-            and fostering discipline and resilience in athletes.
-          </p>
-          <a href="https://github.com/me50/Dawngend" class="project-link" target="_blank">View GitHub Repo →</a>
+        <div class="chart-row">
+          <span class="metric-label">Sophy &middot; structurally valid output</span>
+          <div class="chart-track"><div class="chart-fill" style="width:100%"></div></div>
+          <span class="metric-val">100%</span>
         </div>
+        <div class="chart-row">
+          <span class="metric-label">ForgeAI &middot; QPS throughput vs. baseline</span>
+          <div class="chart-track"><div class="chart-fill" style="width:50%"></div></div>
+          <span class="metric-val">2.0&times;</span>
+        </div>
+      </div>
+      <p class="chart-source">Figures as reported at each project's completion — see individual write-ups below for methodology.</p>
+    </section>
+
+    <section id="work">
+      <div class="section-head">
+        <h2 class="section-title">Selected work</h2>
+        <span class="section-tag">problem &rarr; engineering &rarr; impact</span>
+      </div>
+
+      <div class="projects">
+
+        <article class="card">
+          <div class="card-head">
+            <h3><a href="https://github.com/Emran-goat/forgeai" target="_blank" rel="noopener">ForgeAI &#8599;</a></h3>
+            <span class="venue mono">AMD Developer Cloud Hackathon</span>
+          </div>
+          <dl class="trace">
+            <dt>Problem</dt>
+            <dd>High VRAM overhead and inference latency bottleneck PyTorch models on enterprise GPU clusters.</dd>
+            <dt>Built</dt>
+            <dd>A 7-phase model compression platform — knowledge distillation, pruning, INT8/FP8 quantization — tuned for AMD Instinct MI300X via ROCm, with an Optuna-powered Pareto frontier engine and an async FastAPI/aiosqlite/WebSockets backend for live benchmarking.</dd>
+            <dt>Impact</dt>
+            <dd class="impact">60%+ VRAM reduction, 2&times; QPS throughput for high-concurrency production deployments.</dd>
+          </dl>
+          <div class="tags">
+            <span class="tag">PyTorch</span><span class="tag">ROCm</span><span class="tag">Optuna</span><span class="tag">FastAPI</span><span class="tag">WebSockets</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3><a href="https://andyhub.org" target="_blank" rel="noopener">Andy's Hub &#8599;</a></h3>
+            <span class="venue mono">Personal production system</span>
+          </div>
+          <dl class="trace">
+            <dt>Problem</dt>
+            <dd>Large document collections cause retrieval latency and cross-subject context contamination in RAG systems.</dd>
+            <dt>Built</dt>
+            <dd>A stateful AI study reviewer with automated subject classification and subject-scoped vector isolation in ChromaDB, plus a hybrid text/OCR ingestion layer on GCP VMs behind Cloudflare Tunnels.</dd>
+            <dt>Impact</dt>
+            <dd class="impact">95%+ cut in ingestion and retrieval latency, 24/7 availability.</dd>
+          </dl>
+
+          <div class="diagram-wrap">
+            <p class="diagram-cap">Ingestion &rarr; retrieval pipeline</p>
+            <svg viewBox="0 0 720 130" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Diagram: Upload flows to Extract plus OCR, then to Chroma subject-scoped store, then to Retrieval, then to Generation, then to Study session.">
+              <defs>
+                <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+                  <path d="M0,0 L6,3 L0,6 Z" fill="var(--line-strong)"></path>
+                </marker>
+              </defs>
+              <path class="dg-arrow" d="M108,65 H132"></path>
+              <path class="dg-arrow" d="M228,65 H252"></path>
+              <path class="dg-arrow" d="M348,65 H372"></path>
+              <path class="dg-arrow" d="M468,65 H492"></path>
+              <path class="dg-arrow" d="M588,65 H612"></path>
+
+              <rect class="dg-box" x="4" y="40" width="104" height="50"></rect>
+              <text class="dg-text" x="56" y="61" text-anchor="middle">Upload</text>
+              <text class="dg-sub" x="56" y="76" text-anchor="middle">PDF / slide deck</text>
+
+              <rect class="dg-box" x="132" y="40" width="96" height="50"></rect>
+              <text class="dg-text" x="180" y="61" text-anchor="middle">Extract</text>
+              <text class="dg-sub" x="180" y="76" text-anchor="middle">text + OCR</text>
+
+              <rect class="dg-box accent" x="252" y="40" width="96" height="50"></rect>
+              <text class="dg-text" x="300" y="61" text-anchor="middle">Chroma</text>
+              <text class="dg-sub" x="300" y="76" text-anchor="middle">subject-scoped</text>
+
+              <rect class="dg-box" x="372" y="40" width="96" height="50"></rect>
+              <text class="dg-text" x="420" y="61" text-anchor="middle">Retrieve</text>
+              <text class="dg-sub" x="420" y="76" text-anchor="middle">vector search</text>
+
+              <rect class="dg-box" x="492" y="40" width="96" height="50"></rect>
+              <text class="dg-text" x="540" y="61" text-anchor="middle">Generate</text>
+              <text class="dg-sub" x="540" y="76" text-anchor="middle">reviewer output</text>
+
+              <rect class="dg-box" x="612" y="40" width="104" height="50"></rect>
+              <text class="dg-text" x="664" y="61" text-anchor="middle">Study</text>
+              <text class="dg-sub" x="664" y="76" text-anchor="middle">session</text>
+            </svg>
+          </div>
+
+          <div class="tags">
+            <span class="tag">ChromaDB</span><span class="tag">RAG</span><span class="tag">GCP</span><span class="tag">Cloudflare Tunnels</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3><a href="https://github.com/Dawngend/Runtime-Terrors-TECHSPRINT" target="_blank" rel="noopener">Sophy &#8599;</a></h3>
+            <span class="venue mono">ACM Techsprint &mdash; Team Runtime Terrors</span>
+          </div>
+          <dl class="trace">
+            <dt>Problem</dt>
+            <dd>Low-connectivity learners hit network drops, and single-model RAG tools hallucinate structurally.</dd>
+            <dt>Built</dt>
+            <dd>A stateful RAG study engine with dual-API orchestration — Groq/Llama 3.3 for generation, NVIDIA NIM/Qwen 2.5 for JSON validation — plus a hybrid OCR fallback with disk caching for offline resilience.</dd>
+            <dt>Impact</dt>
+            <dd class="impact">100% structurally validated learning content, sub-second reprocessing.</dd>
+          </dl>
+          <div class="tags">
+            <span class="tag">Groq / Llama 3.3</span><span class="tag">NVIDIA NIM</span><span class="tag">ChromaDB</span><span class="tag">OCR</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3><a href="https://github.com/TadeyRuk/eGov" target="_blank" rel="noopener">BANGON &#8599;</a></h3>
+            <span class="venue mono">eGovPH Hackathon 2026</span>
+          </div>
+          <dl class="trace">
+            <dt>Problem</dt>
+            <dd>Cross-agency government identity databases carry fraud risk and mismatches under legacy query-loop designs.</dd>
+            <dt>Built</dt>
+            <dd>A PII-secure integration platform replacing query loops with a tamper-evident blockchain verification layer, national digital-ID checks with device binding, and strict AAA security logging under CADENA Act compliance.</dd>
+            <dt>Impact</dt>
+            <dd class="impact">Eliminated cross-agency identity mismatches, zero-PII-leakage design.</dd>
+          </dl>
+          <div class="tags">
+            <span class="tag">Blockchain</span><span class="tag">AAA logging</span><span class="tag">PII security</span>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-head">
+            <h3><a href="https://github.com/asapthugn/dzuka-agri" target="_blank" rel="noopener">Dzuka Agri &#8599;</a></h3>
+            <span class="venue mono">lablab.ai Band of Agents &mdash; co-founder</span>
+          </div>
+          <dl class="trace">
+            <dt>Problem</dt>
+            <dd>Smallholder farmers across Africa lack real-time data to prevent crop failure.</dd>
+            <dt>Built</dt>
+            <dd>Backend REST APIs and real-time geospatial data ingestion for a multi-agent agricultural diagnostic platform, as co-founder and lead backend engineer.</dd>
+            <dt>Impact</dt>
+            <dd class="impact">Live climate/crop diagnostics; nominated for the We The Peoples Africa Awards.</dd>
+          </dl>
+          <div class="tags">
+            <span class="tag">Geospatial pipelines</span><span class="tag">Multi-agent systems</span><span class="tag">REST APIs</span>
+          </div>
+        </article>
 
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT SECTION -->
-  <footer class="contact">
-    <div class="container">
-      <h2 class="section-title">Get in Touch</h2>
-      <p class="contact-email">
-        <a href="mailto:andreipamesa20@gmail.com">andreipamesa20@gmail.com</a>
-      </p>
-      <div class="contact-links">
-        <a href="https://github.com/me50/Dawngend" class="btn btn-primary" target="_blank">GitHub</a>
-        <a href="https://www.linkedin.com/in/dawn-andrei-pamesa-870689280/" class="btn btn-secondary" target="_blank">LinkedIn</a>
+    <section id="experience">
+      <div class="section-head">
+        <h2 class="section-title">Experience</h2>
+        <span class="section-tag">chronological</span>
       </div>
-      <p class="copyright">© 2026 Dawn Andrei Pamesa | SM Foundation Scholar</p>
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="when mono">Jul 2026 &mdash; present</div>
+          <h3>Machine Learning Intern, FlyRank AI</h3>
+          <p>Engineered automated ML pipelines to clean, transform, and analyze datasets, streamlining data workflows and powering executive BI dashboards.</p>
+        </div>
+        <div class="tl-item">
+          <div class="when mono">2026 &mdash; present</div>
+          <h3>Co-Founder &amp; Lead Backend Engineer, Dzuka Agri</h3>
+          <p>Backend architecture, REST API design, and geospatial telemetry ingestion for a multi-agent agricultural diagnostics platform serving smallholder farmers.</p>
+        </div>
+        <div class="tl-item">
+          <div class="when mono">Aug 2025 &mdash; present</div>
+          <h3>Junior Officer, FEU Tech ACM Student Chapter</h3>
+          <p>Manage chapter technical infrastructure; organize developer workshops and hackathon bootcamps.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="stack">
+      <div class="section-head">
+        <h2 class="section-title">Stack</h2>
+        <span class="section-tag">by category</span>
+      </div>
+      <div class="table-scroll">
+        <table class="data">
+          <caption>Tools and platforms used across shipped projects</caption>
+          <thead>
+            <tr><th>Category</th><th>Tools</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">Languages</th><td>Python 3.11+, SQL, PL/SQL, C++, Java, PHP, JSON</td></tr>
+            <tr><th scope="row">AI / ML</th><td>PyTorch, ROCm workloads, quantization &amp; pruning (INT8/FP8/INT4), knowledge distillation, RAG, ChromaDB, multi-agent LLM orchestration (Groq/Llama 3, NVIDIA NIM/Qwen), scikit-learn, OCR</td></tr>
+            <tr><th scope="row">Backend &amp; cloud</th><td>FastAPI, Pydantic v2, REST/WebSockets, Supabase (PostgreSQL), SQLite/aiosqlite, GCP VMs, Cloudflare Tunnels, Docker, CI/CD</td></tr>
+            <tr><th scope="row">Frontend</th><td>Next.js, Tailwind CSS, Streamlit</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="education">
+      <div class="section-head">
+        <h2 class="section-title">Education &amp; certifications</h2>
+      </div>
+      <div class="two-col">
+        <div>
+          <h4 class="sub">Education</h4>
+          <ul class="plain">
+            <li>
+              <span class="t">BS Computer Science &mdash; Data Science</span>
+              <span class="s">FEU Institute of Technology, Manila &middot; expected Jul 2028 &middot; 100% SM Foundation Scholar</span>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="sub">Certifications</h4>
+          <ul class="plain">
+            <li><span class="t">Data Scientist</span><span class="s">DataCamp &middot; Aug 2026</span></li>
+            <li><span class="t">AWS Certified AI Practitioner</span><span class="s">AWS &middot; 2026</span></li>
+            <li><span class="t">CCNA: Introduction to Networks</span><span class="s">Cisco &middot; Jul 2026</span></li>
+            <li><span class="t">IT Specialist &mdash; Python</span><span class="s">Certiport &middot; valid to Jul 2031</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer id="contact">
+    <div class="wrap">
+      <p class="cta">Building something that needs real infrastructure, not just a demo?</p>
+      <div class="foot-links">
+        <a class="pill-link primary" href="mailto:andreipamesa20@gmail.com">andreipamesa20@gmail.com</a>
+        <a class="pill-link" href="https://github.com/Dawngend" target="_blank" rel="noopener">GitHub &#8599;</a>
+        <a class="pill-link" href="https://linkedin.com/in/dawn-andrei-pamesa-870689280" target="_blank" rel="noopener">LinkedIn &#8599;</a>
+      </div>
+      <p class="fine mono">Quezon City, NCR, Philippines &mdash; open to remote / international roles</p>
     </div>
   </footer>
-
+</main>
 </body>
 </html>
