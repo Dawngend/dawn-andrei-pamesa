@@ -1,9 +1,9 @@
 export const profile = {
   name: "Dawn Andrei Pamesa",
-  title: "AI/ML engineer and backend systems architect",
+  title: "Data scientist, AI/ML engineer, and backend systems architect",
   location: "Quezon City, PH",
   availability: "Open to remote / international",
-  bio: "I build the parts under the product — GPU-optimized inference pipelines, RAG architectures with real vector isolation, and the async backends that keep them online. Currently machine learning intern at FlyRank AI and co-founder of Dzuka Agri.",
+  bio: "I work the whole path from raw data to running system — ML pipelines that clean, transform, and analyze datasets into executive BI dashboards, GPU-optimized inference, RAG architectures with real vector isolation, and the async backends that keep them online. Certified DataCamp Data Scientist, reading Computer Science (Data Science). Currently machine learning intern at FlyRank AI and co-founder of Dzuka Agri.",
   email: "andreipamesa20@gmail.com",
 } as const;
 
@@ -199,6 +199,19 @@ export const stack: StackGroup[] = [
     items: ["Python 3.11+", "SQL", "PL/SQL", "C++", "Java", "PHP", "JSON"],
   },
   {
+    label: "Data & analytics",
+    items: [
+      "SQL / PL-SQL",
+      "ETL / ELT pipelines",
+      "Data cleaning & transformation",
+      "Exploratory analysis",
+      "scikit-learn",
+      "Embedding & similarity scoring",
+      "Executive BI dashboards",
+      "PostgreSQL / SQLite",
+    ],
+  },
+  {
     label: "AI / ML",
     items: [
       "PyTorch",
@@ -208,7 +221,6 @@ export const stack: StackGroup[] = [
       "RAG",
       "ChromaDB",
       "Multi-agent LLM orchestration (Groq/Llama 3, NVIDIA NIM/Qwen)",
-      "scikit-learn",
       "OCR",
     ],
   },

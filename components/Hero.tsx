@@ -5,7 +5,14 @@ import { contactLinks, profile } from "@/lib/content";
 import EmbeddingField from "./EmbeddingField";
 import { Ticks } from "./Frame";
 
-const headline = ["AI/ML engineer", "and backend", "systems architect"];
+const headline = ["Data scientist,", "AI/ML engineer,", "backend architect"];
+
+/** Credential signals that belong above the fold, not buried further down. */
+const credentials = [
+  "DataCamp Data Scientist",
+  "BS CS — Data Science",
+  "SM Foundation Scholar",
+];
 
 export default function Hero() {
   const reduced = useReducedMotion();
@@ -72,6 +79,23 @@ export default function Hero() {
           >
             {profile.bio}
           </motion.p>
+
+          <motion.ul
+            initial={reduced ? false : { opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.34, delay: 0.35 }}
+            className="mt-5 flex flex-wrap items-center gap-2"
+            aria-label="Credentials"
+          >
+            {credentials.map((c) => (
+              <li
+                key={c}
+                className="border border-line-strong px-2.5 py-1 font-mono text-[0.6875rem] uppercase tracking-[0.1em] text-muted"
+              >
+                {c}
+              </li>
+            ))}
+          </motion.ul>
 
           <motion.div
             initial={reduced ? false : { opacity: 0, y: 10 }}
