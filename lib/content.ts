@@ -106,6 +106,20 @@ export const projects: Project[] = [
     diagram: "rag-pipeline",
   },
   {
+    id: "job-pipeline",
+    name: "Job Market Pipeline",
+    context: "Personal Data Infrastructure",
+    href: null,
+    linkLabel: null,
+    problem:
+      "Job boards expose only a live snapshot, so the labour-market signal underneath disappears the moment a listing expires — and keyword search cannot separate a real skills match from an incidental tool mention.",
+    built:
+      "A fault-tolerant ingestion pipeline over five public job APIs and RSS feeds, with SHA-256 content-hash deduplication, per-source failure isolation, and an append-only observation store that keeps every posting ever seen. Ranking pairs a curated skills vocabulary with sentence-transformer embeddings, so each score names the skills matched and missing.",
+    impact:
+      "Turns a disposable feed into a longitudinal market dataset, with explainable skill-gap reporting instead of an opaque relevance score. Runs unattended daily; 160 automated tests.",
+    tags: ["Python", "SQLite", "ETL", "Sentence-Transformers", "Task Scheduler"],
+  },
+  {
     id: "sophy",
     name: "Sophy",
     context: "ACM TECHSPRINT — Team Runtime Terrors",
