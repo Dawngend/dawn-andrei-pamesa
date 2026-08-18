@@ -3,7 +3,7 @@ export const profile = {
   title: "Data scientist, AI/ML engineer, and backend systems architect",
   location: "Quezon City, PH",
   availability: "Open to remote / international",
-  bio: "I work the whole path from raw data to running system — ML pipelines that clean, transform, and analyze datasets into executive BI dashboards, GPU-optimized inference, RAG architectures with real vector isolation, and the async backends that keep them online. Certified DataCamp Data Scientist, reading Computer Science (Data Science). Currently machine learning intern at FlyRank AI and co-founder of Dzuka Agri.",
+  bio: "I work the whole path from raw data to running system: ML pipelines that clean, transform, and analyze datasets into executive BI dashboards, GPU-optimized inference, RAG architectures with real vector isolation, and the async backends that keep them online. Certified DataCamp Data Scientist, reading Computer Science (Data Science). Currently machine learning intern at FlyRank AI and co-founder of Dzuka Agri.",
   email: "andreipamesa20@gmail.com",
 } as const;
 
@@ -86,7 +86,7 @@ export const projects: Project[] = [
     problem:
       "High VRAM overhead and inference latency bottleneck PyTorch models on enterprise GPU clusters.",
     built:
-      "A 7-phase model compression platform — knowledge distillation, pruning, INT8/FP8 quantization — tuned for AMD Instinct MI300X via ROCm, with an Optuna-powered Pareto frontier engine and an async FastAPI/aiosqlite/WebSockets backend for live benchmarking.",
+      "A 7-phase model compression platform (knowledge distillation, pruning, INT8/FP8 quantization) tuned for AMD Instinct MI300X via ROCm, with an Optuna-powered Pareto frontier engine and an async FastAPI/aiosqlite/WebSockets backend for live benchmarking.",
     impact:
       "60%+ VRAM reduction, 2× QPS throughput for high-concurrency production deployments.",
     tags: ["PyTorch", "ROCm", "Optuna", "FastAPI", "WebSockets"],
@@ -112,7 +112,7 @@ export const projects: Project[] = [
     href: null,
     linkLabel: null,
     problem:
-      "Job boards expose only a live snapshot, so the labour-market signal underneath disappears the moment a listing expires — and keyword search cannot separate a real skills match from an incidental tool mention.",
+      "Job boards expose only a live snapshot, so the labour-market signal underneath disappears the moment a listing expires. Keyword search cannot separate a real skills match from an incidental tool mention either.",
     built:
       "A fault-tolerant ingestion pipeline over five public job APIs and RSS feeds, with SHA-256 content-hash deduplication, per-source failure isolation, and an append-only observation store that keeps every posting ever seen. Ranking pairs a curated skills vocabulary with sentence-transformer embeddings, so each score names the skills matched and missing.",
     impact:
@@ -128,7 +128,7 @@ export const projects: Project[] = [
     problem:
       "Low-connectivity learners hit network drops, and single-model RAG tools hallucinate structurally.",
     built:
-      "A stateful RAG study engine with dual-API orchestration — Groq/Llama 3.3 for generation, NVIDIA NIM/Qwen 2.5 for JSON validation — plus a hybrid OCR fallback with disk caching for offline resilience.",
+      "A stateful RAG study engine with dual-API orchestration (Groq/Llama 3.3 for generation, NVIDIA NIM/Qwen 2.5 for JSON validation), plus a hybrid OCR fallback with disk caching for offline resilience.",
     impact: "100% structurally validated learning content, sub-second reprocessing.",
     tags: ["Groq/Llama 3.3", "NVIDIA NIM", "ChromaDB", "OCR"],
   },

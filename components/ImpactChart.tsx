@@ -117,7 +117,7 @@ export default function ImpactChart() {
       <div className="flex items-baseline justify-between gap-4">
         <span className="label">Fig. 02 — reported per project</span>
         <span className="font-mono text-[0.6875rem] text-faint">
-          scale: 0—100%
+          scale: 0–100%
         </span>
       </div>
 

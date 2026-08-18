@@ -40,7 +40,7 @@ export default function Home() {
           id="work"
           index="01"
           title="Selected work"
-          lead="Five builds, each stated the same way: the problem that made it necessary, what was actually engineered, and the measured result. Open a card for the full record."
+          lead="Each build is stated the same way: the problem that made it necessary, what was actually engineered, and the measured result. Open a card for the full record."
         >
           <Projects />
         </Section>

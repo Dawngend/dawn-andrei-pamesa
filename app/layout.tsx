@@ -3,7 +3,7 @@ import "./globals.css";
 
 const title = "Dawn Andrei Pamesa";
 const description =
-  "AI/ML engineer and backend systems architect — portfolio and selected work.";
+  "Data scientist, AI/ML engineer, and backend systems architect. Portfolio and selected work.";
 
 export const metadata: Metadata = {
   title,

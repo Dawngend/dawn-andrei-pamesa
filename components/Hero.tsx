@@ -174,7 +174,7 @@ export default function Hero() {
           <p className="mt-4 border-t border-line pt-3 text-[0.8125rem] leading-relaxed text-muted">
             Vectors are partitioned by subject before they are ever searched.
             The query resolves to its nearest neighbours{" "}
-            <span className="text-ink">inside one scope only</span> — which is
+            <span className="text-ink">inside one scope only</span>, which is
             how cross-subject context contamination stops being a retrieval
             problem.
           </p>
