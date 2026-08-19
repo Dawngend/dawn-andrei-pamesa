@@ -36,4 +36,11 @@ npm install
 npm run dev
 ```
 
-Deployed via Vercel — pushes to `main` redeploy automatically.
+Deployed via Vercel. Pushes to `main` redeploy automatically.
+
+**Production URL: https://dawn-andrei-pamesa.vercel.app**
+
+Check changes there, not on a deployment link of the form
+`dawn-andrei-pamesa-<hash>-dawngends-projects.vercel.app`. Those URLs are pinned to a
+single build, never update no matter how many times you push, and sit behind Vercel
+Authentication. A stale one of those cost a debugging round on 2026-08-19.
