@@ -1,0 +1,46 @@
+{
+  "projectId": "66cd9278-5fd5-4fc3-b956-851b324c06ef",
+  "shape": "package",
+  "pkg": "dawn-pamesa-portfolio",
+  "globalName": "Blueprint",
+  "tsconfig": "tsconfig.json",
+  "srcDir": "components",
+  "cssEntry": ".design-sync/blueprint-compiled.css",
+  "runtimeFontPrefixes": [
+    "Cascadia",
+    "JetBrains",
+    "SFMono",
+    "ui-monospace",
+    "ui-sans-serif",
+    "Segoe"
+  ],
+  "dtsPropsFor": {
+    "Section": "id?: string; index: string; title: string; lead?: string; children: React.ReactNode; className?: string;",
+    "Panel": "children: React.ReactNode; className?: string; tickHost?: boolean;",
+    "Callout": "index?: string; children: React.ReactNode;",
+    "Ticks": "",
+    "Reveal": "children: React.ReactNode; delay?: number; y?: number; className?: string; as?: 'div' | 'li' | 'section' | 'article' | 'header' | 'footer';",
+    "CountUp": "to: number; decimals?: number; duration?: number; delay?: number; className?: string;",
+    "ThemeToggle": ""
+  },
+  "componentSrcMap": {
+    "Hero": null,
+    "Nav": null,
+    "Footer": null,
+    "Projects": null,
+    "Experience": null,
+    "Credentials": null,
+    "Stack": null,
+    "StatsStrip": null,
+    "EmbeddingField": null,
+    "ImpactChart": null,
+    "RagPipeline": null,
+    "MotionConfig": null
+  },
+  "provider": {
+    "component": "MotionConfig",
+    "props": {
+      "reducedMotion": "always"
+    }
+  }
+}
