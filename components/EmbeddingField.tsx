@@ -126,9 +126,9 @@ export default function EmbeddingField() {
         viewBox={`0 0 ${VB.w} ${VB.h}`}
         className="block h-auto w-full"
         role="img"
-        aria-label={`Embedding-space scatter plot: three subject clusters — ${CLUSTERS.map(
+        aria-label={`Embedding-space scatter plot: three subject clusters (${CLUSTERS.map(
           (c) => c.label
-        ).join(", ")} — with a query vector resolving to its nearest neighbours inside the ${
+        ).join(", ")}), with a query vector resolving to its nearest neighbours inside the ${
           CLUSTERS[target].label
         } scope only.`}
       >

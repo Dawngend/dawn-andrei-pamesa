@@ -1,9 +1,9 @@
 export const profile = {
   name: "Dawn Andrei Pamesa",
-  title: "Data scientist, AI/ML engineer, and backend systems architect",
+  title: "AI/ML engineer, data scientist, and backend systems architect",
   location: "Quezon City, PH",
   availability: "Open to remote / international",
-  bio: "I work the whole path from raw data to running system: ML pipelines that clean, transform, and analyze datasets into executive BI dashboards, GPU-optimized inference, RAG architectures with real vector isolation, and the async backends that keep them online. Certified DataCamp Data Scientist, reading Computer Science (Data Science). Currently machine learning intern at FlyRank AI and co-founder of Dzuka Agri.",
+  bio: "I work the whole path from raw data to running system: ML pipelines that clean, transform, and analyze datasets into executive BI dashboards, GPU-optimized inference, RAG architectures with real vector isolation, and the async backends that keep them online. Certified DataCamp Data Scientist, reading Computer Science (Data Science). Former FlyRank AI machine learning intern (Jul–Sep 2026), currently co-founder of Dzuka Agri.",
   email: "andreipamesa20@gmail.com",
 } as const;
 
@@ -39,7 +39,7 @@ export const topStats: TopStat[] = [
   { value: 60, suffix: "%+", caption: "VRAM cut, AMD MI300X pipeline" },
   { value: 95, suffix: "%+", caption: "Retrieval latency reduction" },
   { value: 100, suffix: "%", caption: "Structurally validated deck output" },
-  { value: 5, suffix: "", caption: "Shipped hackathon / production builds" },
+  { value: 24, suffix: "/7", caption: "Andy's Hub production availability" },
 ];
 
 export type ImpactBar = {
@@ -180,7 +180,7 @@ export type Role = {
 
 export const experience: Role[] = [
   {
-    period: "Jul 2026 — present",
+    period: "Jul 2026 — Sep 2026",
     title: "Machine Learning Intern",
     org: "FlyRank AI",
     blurb:

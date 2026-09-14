@@ -5,7 +5,7 @@ import { contactLinks, profile } from "@/lib/content";
 import EmbeddingField from "./EmbeddingField";
 import { Ticks } from "./Frame";
 
-const headline = ["Data scientist,", "AI/ML engineer,", "backend architect"];
+const headline = ["AI/ML engineer,", "data scientist,", "backend architect"];
 
 /** Credential signals that belong above the fold, not buried further down. */
 const credentials = [
