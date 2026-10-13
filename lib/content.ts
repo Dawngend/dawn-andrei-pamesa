@@ -120,6 +120,34 @@ export const projects: Project[] = [
     tags: ["Python", "SQLite", "ETL", "Sentence-Transformers", "Task Scheduler"],
   },
   {
+    id: "andy-trader",
+    name: "Andy Trader",
+    context: "Calibrated Forecast Harness",
+    href: "https://github.com/Dawngend/andy-trader",
+    linkLabel: "GitHub",
+    problem:
+      "Short-horizon crypto predictions are easy to mistake for real model skill without a fair test.",
+    built:
+      "A paper-trading harness that logs every prediction before its outcome is known, settles it blind, and evaluates it walk-forward. A promotion gate rejected its first model, live-performance demotion pulled a promoted PyTorch model back out, and a skill gate blocks predictors that have not beaten the base rate from using paper capital. It runs unattended on scheduled tasks with a stdlib-only runtime.",
+    impact:
+      "Six strategies produced about 2,800 settled out-of-sample predictions across eight instruments. None beat the base rate, so the harness found no skill and now refuses to trade.",
+    tags: ["Python", "PyTorch", "SQLite", "Backtesting", "Calibration"],
+  },
+  {
+    id: "andy-run",
+    name: "Andy Router and andy run",
+    context: "Agent Orchestration Tooling",
+    href: null,
+    linkLabel: null,
+    problem:
+      "Coding agents differ in cost and strength, and unattended agent work needs guardrails.",
+    built:
+      "Python tooling routes each task to an agent and model by complexity and policy, builds on an isolated git branch, runs a review loop between two model families, and runs the project's check command. It merges only small passing work and stops big or risky work for a human. andy sync keeps two machines in sync automatically.",
+    impact:
+      "Hands-off task execution with safety at the merge step. 535 automated tests.",
+    tags: ["Python", "Git", "LLM Orchestration", "Automation"],
+  },
+  {
     id: "sophy",
     name: "Sophy",
     context: "ACM TECHSPRINT — Team Runtime Terrors",
