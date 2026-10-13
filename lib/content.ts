@@ -144,7 +144,7 @@ export const projects: Project[] = [
     built:
       "Python tooling routes each task to an agent and model by complexity and policy, builds on an isolated git branch, runs a review loop between two model families, and runs the project's check command. It merges only small passing work and stops big or risky work for a human. andy sync keeps two machines in sync automatically.",
     impact:
-      "Hands-off task execution with safety at the merge step. 535 automated tests.",
+      "Hands-off task execution with safety at the merge step.",
     tags: ["Python", "Git", "LLM Orchestration", "Automation"],
   },
   {
