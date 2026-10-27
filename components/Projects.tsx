@@ -160,17 +160,30 @@ export default function Projects() {
                         <span className="font-mono text-[0.6875rem] text-faint">
                           {p.name} · {p.context}
                         </span>
-                        {p.href ? (
-                          <a
-                            href={p.href}
-                            target="_blank"
-                            rel="noreferrer noopener"
-                            className="inline-flex items-center gap-1.5 font-mono text-[0.75rem] text-accent transition-opacity hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
-                          >
-                            {p.linkLabel}
-                            <ExternalIcon />
-                          </a>
-                        ) : null}
+                        <div className="flex items-center gap-5">
+                          {p.videoHref ? (
+                            <a
+                              href={p.videoHref}
+                              target="_blank"
+                              rel="noreferrer noopener"
+                              className="inline-flex items-center gap-1.5 font-mono text-[0.75rem] text-accent transition-opacity hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                            >
+                              Watch video
+                              <ExternalIcon />
+                            </a>
+                          ) : null}
+                          {p.href ? (
+                            <a
+                              href={p.href}
+                              target="_blank"
+                              rel="noreferrer noopener"
+                              className="inline-flex items-center gap-1.5 font-mono text-[0.75rem] text-accent transition-opacity hover:opacity-75 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent"
+                            >
+                              {p.linkLabel}
+                              <ExternalIcon />
+                            </a>
+                          ) : null}
+                        </div>
                       </div>
                     </div>
                   </motion.div>

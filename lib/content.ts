@@ -69,6 +69,7 @@ export type Project = {
   context: string;
   href: string | null;
   linkLabel: string | null;
+  videoHref?: string;
   problem: string;
   built: string;
   impact: string;
@@ -137,14 +138,15 @@ export const projects: Project[] = [
     id: "andy-run",
     name: "Andy Router and andy run",
     context: "Agent Orchestration Tooling",
-    href: null,
-    linkLabel: null,
+    href: "https://github.com/Dawngend/andy-router",
+    linkLabel: "GitHub",
+    videoHref: "https://github.com/Dawngend/andy-router/blob/main/docs/walkthrough.mp4",
     problem:
       "Coding agents differ in cost and strength, and unattended agent work needs guardrails.",
     built:
       "Python tooling routes each task to an agent and model by complexity and policy, builds on an isolated git branch, runs a review loop between two model families, and runs the project's check command. It merges only small passing work and stops big or risky work for a human. andy sync keeps two machines in sync automatically.",
     impact:
-      "Hands-off task execution with safety at the merge step.",
+      "Safety at the merge step. In 166 real runs, 50 merged, 99 stopped for a human and 17 failed; the public repo has 220+ offline tests and a published benchmark.",
     tags: ["Python", "Git", "LLM Orchestration", "Automation"],
   },
   {
